@@ -154,7 +154,7 @@
         }
 
         function del(){ 
-            var input =prompt('삭제하고프면 삭제 을 입력' ,' ');
+            var input =prompt('삭제 을 입력' ,' ');
             axios({
                 method : 'post',
                 url:'http://localhost:3001/main/QnA/Article/delete',
@@ -180,6 +180,8 @@
             }).then((res) =>{
                 if(res.data =='fail'){
                     alert('글 작성자가 아닙니다');
+                }else {
+                    location.href = 'http://localhost:3001/main/QnA/updatewrite'
                 }
             }).catch((err)=>{
                 console.error(err);
