@@ -104,11 +104,11 @@
  }
  
  .board_list .writer {
-    margin-left: 60%;
+    margin-left: 10%;
  }
  
  .board_list .date {
-    margin-left: 10%;
+    margin-left: 20%;
  }
  
  .board_list .view {
@@ -134,7 +134,7 @@
 
     color:#fff;
 
-    padding: 15px 0;
+    padding: 5px 0;
 
     text-align: center;
 
@@ -142,12 +142,10 @@
 
     display: inline-block;
 
-    font-size: 15px;
-
-    margin: 4px;
+    font-size: 10px;
 
     cursor: pointer;
-    border-radius:10px;
+    border-radius:5px;
 }
 button:hover{
     background-color: #708090;
@@ -173,4 +171,14 @@ i:hover{
 }
 .board_list .eotrmfckd {
     margin: 10px
+}
+.delete {
+    margin-left: 15%;
+}
+.eotrmf {
+    font-size: 15px;
+    color: #007c96;
+}
+.eotrmf1 {
+    font-size: 20px;
 }
