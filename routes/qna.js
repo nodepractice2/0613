@@ -92,6 +92,9 @@ router.post('/Article/delete', async(req,res)=>{
     }
 
 });
+router.get('/updatewrite', (req,res) =>{
+    res.render('update',{updateData});
+});
 
 router.route('/update')
     .get( async(req,res)=>{
@@ -106,7 +109,7 @@ router.route('/update')
             return next(error);
         });
         if(writer ==user.nick){
-            res.render('update',{updateData});
+            res.send('ok');
         }else {
             res.send('fail');
         }
