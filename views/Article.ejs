@@ -141,7 +141,7 @@
                 Object.keys(users).map(function (key){
                     const userdiv = document.createElement('div');
                     const span = document.createElement('span');
-                    span.innerHTML = <%=user.nick %> + "<br>" +users[key];
+                    span.innerHTML = "<%=user.nick %>" + "<br>" +users[key];
                     //span.innerHTML = datgle;
                     userdiv.appendChild(span);
                     newdata.appendChild(userdiv);
